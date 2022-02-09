@@ -1,0 +1,19 @@
+.container {
+    background-color: white;
+}
+
+div{
+    height: 50px;
+}
+
+p{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+[class*="col-"] {
+    background-color: blue;
+    border: 1px solid white;
+}
