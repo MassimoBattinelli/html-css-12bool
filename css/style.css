@@ -1,28 +1,32 @@
-.container {
-    background-color: white;
+html{
+    color: aliceblue;
 }
 
-div{
-    height: 50px;
-}
-
-p{
-    color: white;
-    font-size: 15px;
-    text-align: center;
-    margin-top: 15px;
+.row{
+    min-height: 50px;
 }
 
 [class*="col-"] {
     background-color: blue;
+
+    border: 1px solid white;
+    padding: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nested{
+    padding: 1rem;
+}
+
+.row .row [class*="col-"]{
+    background-color: blue;
     border: 1px solid white;
 }
 
-.green{
-    background-color: green;
-}
-
-.col-6 .row{
-    border-top: 3px solid blue;
-    height: 30px;
+section{
+    margin: 2rem 0;
+    border: 1px solid white;
 }
